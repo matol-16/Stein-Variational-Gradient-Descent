@@ -96,5 +96,5 @@ if __name__ == '__main__':
     
     theta = SVGD().update(x0=theta0, lnprob=model.dlnprob, bandwidth=-1, n_iter=6000, stepsize=0.05, alpha=0.9, debug=True)
     
-    print '[accuracy, log-likelihood]'
-    print model.evaluation(theta, X_test, y_test)
+    print('[accuracy, log-likelihood]')
+    print(model.evaluation(theta, X_test, y_test))
